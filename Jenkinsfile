@@ -2,13 +2,6 @@ pipeline {
     agent any
 
     stages {
-        stage('Clean') {
-            steps {
-                script {
-                    sh 'docker stop mytomcat'
-                }
-            }
-        }
         stage('Build') {
             steps {
                 script {
@@ -23,6 +16,12 @@ pipeline {
                 }
             }
         }
-
+        stage('Clean') {
+            steps {
+                script {
+                    sh 'docker stop mytomcat'
+                }
+            }
+        }
     }
 }
