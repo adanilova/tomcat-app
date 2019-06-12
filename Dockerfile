@@ -8,4 +8,4 @@ WORKDIR /usr/local/tomcat/webapps/
 EXPOSE 8080
 
 # Download Sample Application war file
-RUN wget https://tomcat.apache.org/tomcat-8.0-doc/appdev/sample/sample.warcat: n: No such file or directory
+RUN wget https://tomcat.apache.org/tomcat-8.0-doc/appdev/sample/sample.war
