@@ -6,6 +6,7 @@ pipeline {
             steps {
                 script {
                     sh 'docker build -t mytomcat .'
+		    sh 'docker images | grep mytomcat'
                 }
             }
         }
